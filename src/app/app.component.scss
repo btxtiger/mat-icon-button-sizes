@@ -1,0 +1,14 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 20px;
+
+  button {
+    border: 1px solid red;
+  }
+
+  h3:not(:first-child) {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,7 @@
+{
+   "printWidth": 130,
+   "tabWidth": 3,
+   "singleQuote": true,
+   "insertPragma": false,
+   "plugins": ["prettier-plugin-organize-imports"]
+}

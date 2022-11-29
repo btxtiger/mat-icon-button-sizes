@@ -1,0 +1,53 @@
+{
+   "root": true,
+   "ignorePatterns": [],
+   "plugins": ["jsdoc"],
+   "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+   },
+   "overrides": [
+      {
+         "files": ["*.ts"],
+         "parserOptions": {
+            "project": ["tsconfig.json"],
+            "createDefaultProgram": true
+         },
+         "extends": ["plugin:@angular-eslint/recommended", "plugin:@angular-eslint/template/process-inline-templates"],
+         "rules": {
+            "@typescript-eslint/explicit-function-return-type": [
+               "error", {
+                  "allowExpressions": true
+               }
+            ],
+            "@typescript-eslint/explicit-member-accessibility": [
+               "error",
+               {
+                  "ignoredMethodNames": ["ngOnInit", "ngOnChanges", "ngOnDestroy"],
+                  "overrides": {
+                     "constructors": "no-public"
+                  }
+               }
+            ],
+            "jsdoc/require-jsdoc": [
+               "error",
+               {
+                  "require": {
+                     "FunctionDeclaration": true
+                  },
+                  "checkConstructors": false,
+                  "contexts": [
+                     "MethodDefinition:not(MethodDefinition[key.name=\"ngOnInit\"]):not(MethodDefinition[key.name=\"ngOnDestroy\"]):not(MethodDefinition[key.name=\"ngOnChanges\"])"
+                  ]
+               }
+            ],
+            "jsdoc/require-description": "error"
+         }
+      },
+      {
+         "files": ["*.html"],
+         "extends": ["plugin:@angular-eslint/template/recommended"],
+         "rules": {}
+      }
+   ]
+}

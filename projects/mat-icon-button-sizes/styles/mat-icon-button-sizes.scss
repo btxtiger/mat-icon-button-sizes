@@ -1,0 +1,6 @@
+@import "mat-icon-button-size.mixin";
+
+@include MatIconButtonSize('large', 40px, 24px);
+@include MatIconButtonSize('medium', 32px, 19.2px);
+@include MatIconButtonSize('small', 26px, 15.6px);
+@include MatIconButtonSize('tiny', 20px, 12px);

@@ -1,0 +1,28 @@
+{
+   "name": "mat-icon-button-sizes",
+   "version": "1.0.0",
+   "description": "Sizes for the Angular Material 15+ icon button!",
+   "author": "Jonas Gnioui <btxtiger@icloud.com>",
+   "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/btxtiger/mat-icon-button-sizes"
+   },
+   "keywords": [
+      "angular",
+      "angular-component",
+      "ui",
+      "library",
+      "icon-button",
+      "angular-material"
+   ],
+   "peerDependencies": {
+      "@angular/common": "15 - 100",
+      "@angular/core": "15 - 100",
+      "@angular/animations": "15 - 100",
+      "@angular/material": "15 - 100"
+   },
+   "dependencies": {
+      "tslib": "^2.3.0"
+   }
+}

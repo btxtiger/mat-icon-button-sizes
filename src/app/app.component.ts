@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ICONS } from "./ICONS";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mat-icon-button-sizes-demo';
+  public icons = ICONS;
 }
