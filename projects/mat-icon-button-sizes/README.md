@@ -7,12 +7,15 @@
 ### Sizes for the Angular Material 15+ icon button!
 
 ```sh
-# Make sure you have Angular Material 15+ installed
 # Install the Angular component
 npm i -S mat-icon-button-sizes
 ```
 
 ### <a href="https://btxtiger.github.io/mat-icon-button-sizes/" target="_blank">⇨ DEMO</a>
+
+## Compatibility
+✅ Angular Material 15+ (MDC)<br>
+❌ Angular Material 2+
 
 ## Usage
 ```scss
