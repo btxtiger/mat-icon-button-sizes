@@ -49,7 +49,7 @@ or define your own classes, and just pass them as class name.
 @import "mat-icon-button-sizes/styles/mat-icon-button-size.mixin";
 
 // The default factor between button and icon size is *= 0.6
-@include MatIconButtonSize('super-duper', 128px, 78.8px);
+@include MatIconButtonSize('super-duper', 128px, 79px);
 ```
 ```html
 <button mat-icon-button class="mat-super-duper-icon-button">
