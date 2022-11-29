@@ -21,7 +21,7 @@ npm i -S mat-icon-button-sizes
 ```scss
 // global.scss
 // @import your Angular Material theme before!
-@import "mat-icon-button-sizes/styles/mat-icon-button-sizes.scss";
+@import "../node_modules/mat-icon-button-sizes/styles/mat-icon-button-sizes";
 ```
 ```html
 <button mat-icon-button mat-large-icon-button>
