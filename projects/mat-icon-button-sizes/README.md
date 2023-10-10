@@ -29,13 +29,11 @@ npm i -S mat-icon-button-sizes
 import { MatIconButtonSizesModule } from 'mat-icon-button-sizes';
 
 @NgModule({
-   declarations: [AppComponent],
    imports: [
       ...
       MatIconButtonSizesModule,
    ],
-   providers: [],
-   bootstrap: [AppComponent],
+   ...
 })
 export class AppModule {}
 ```
