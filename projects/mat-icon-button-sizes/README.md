@@ -23,6 +23,22 @@ npm i -S mat-icon-button-sizes
 // @import your Angular Material theme before!
 @import "../node_modules/mat-icon-button-sizes/styles/mat-icon-button-sizes";
 ```
+```ts
+// app.module.ts
+// Import the module into your app module.
+import { MatIconButtonSizesModule } from 'mat-icon-button-sizes';
+
+@NgModule({
+   declarations: [AppComponent],
+   imports: [
+      ...
+      MatIconButtonSizesModule,
+   ],
+   providers: [],
+   bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
 ```html
 <button mat-icon-button mat-large-icon-button>
    <mat-icon>delete</mat-icon>
