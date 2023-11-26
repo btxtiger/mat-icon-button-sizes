@@ -7,7 +7,7 @@
       "start": "ng serve --port 4203",
       "build:demo": "ng build mat-icon-button-sizes-demo",
       "build:lib": "ng build mat-icon-button-sizes",
-      "publish": "npm run build:demo && npm run build:lib && cd dist/mat-icon-button-sizes && npm publish",
+      "release": "npm run build:demo && npm run build:lib && cd dist/mat-icon-button-sizes && npm publish",
       "watch": "ng build --watch --configuration development",
       "test": "ng test"
    },
