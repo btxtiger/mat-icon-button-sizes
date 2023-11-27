@@ -6,7 +6,8 @@
       "ng": "ng",
       "start": "ng serve --port 4203",
       "build:demo": "ng build mat-icon-button-sizes-demo",
-      "build:lib": "ng build mat-icon-button-sizes",
+      "build:css": "node-sass projects/mat-icon-button-sizes/styles/mat-icon-button-sizes.scss dist/mat-icon-button-sizes/style.css",
+      "build:lib": "ng build mat-icon-button-sizes && npm run build:css",
       "release": "npm run build:demo && npm run build:lib && cd dist/mat-icon-button-sizes && npm publish",
       "watch": "ng build --watch --configuration development",
       "test": "ng test"
@@ -42,6 +43,7 @@
       "karma-jasmine": "~5.1.0",
       "karma-jasmine-html-reporter": "~2.0.0",
       "ng-packagr": "^15.0.0",
+      "node-sass": "^8.0.0",
       "prettier": "^2.8.0",
       "prettier-plugin-organize-imports": "^3.2.1",
       "typescript": "~4.8.2"

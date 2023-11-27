@@ -1,12 +1,16 @@
 {
    "name": "mat-icon-button-sizes",
-   "version": "1.0.5",
+   "version": "1.0.6",
    "description": "Sizes for the Angular Material 15+ icon button!",
    "author": "Jonas Gnioui <btxtiger@icloud.com>",
    "license": "MIT",
    "repository": {
       "type": "git",
       "url": "https://github.com/btxtiger/mat-icon-button-sizes"
+   },
+   "exports": {
+      "./styles/": "./styles/",
+      "./style.css": "./style.css"
    },
    "keywords": [
       "angular",

@@ -21,21 +21,15 @@ npm i -S mat-icon-button-sizes
 ```scss
 // global.scss
 // @import your Angular Material theme before!
-@import "mat-icon-button-sizes/styles/mat-icon-button-sizes";
+@import "mat-icon-button-sizes/style.css";
 ```
 ```ts
-// app.module.ts
-// Import the module into your app module.
+// Import the module into your module or standalone component.
 import { MatIconButtonSizesModule } from 'mat-icon-button-sizes';
 
-@NgModule({
-   imports: [
-      ...
-      MatIconButtonSizesModule,
-   ],
-   ...
-})
-export class AppModule {}
+imports: [
+   MatIconButtonSizesModule,
+]
 ```
 ```html
 <button mat-icon-button mat-large-icon-button>
@@ -70,6 +64,3 @@ or define your own classes, and just pass them as class name.
    <mat-icon>delete</mat-icon>
 </button>
 ```
-
-## Development
-- TODO: Manually export styles: `"./styles/": "./styles/",`
